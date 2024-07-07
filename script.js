@@ -18,8 +18,12 @@ const questions = [
         question: "Who is the current director of IIT Patna?",
         options: ["Prof. Pushpak Bhattacharyya", "Prof. T. N. Singh", "Prof. Rajiv Misra", "Prof. Chandan Tilak Bhunia"],
         answer: "Prof. T. N. Singh"
+    },
+    {
+        question: "What is the full name of Rishi Kumar?",
+        options: ["Rishi Kumar Jeeralal Gautam", "Rishi Kumar Kheeralal Gautam", "Rishi Kumar Meeralal Gautam", "Rishi Kumar Heeralal Gaurav"],
+        answer: "Rishi Kumar Kheeralal Gautam" ,
     }
-    // Add more questions as needed
 ];
 
 function startQuiz() {
