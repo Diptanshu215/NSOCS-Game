@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Cover the entire page */
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Increased max-width for a larger layout */
+}
+
+.box {
+    padding: 40px; /* Increased padding for more space */
+    border: 2px solid #ff9800; /* Updated border color */
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 700px; /* Increased max-width */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+h1, h2 {
+    color: #ff9800; /* Updated heading color */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+    background-color: #333;
+    color: #ff9800;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #ff9800;
+    color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.rules {
+    margin: 30px 0;
+}
+
+.rules ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#timer, #score {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ff9800; /* Timer and score color */
+}
+
+/* Typing Animation */
+#typing-container {
+    overflow: hidden;
+    border-right: .15em solid #ff9800; /* Updated cursor color */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 22px; /* Increased font size for better readability */
+    max-width: 100%;
+    box-sizing: border-box;
+    color: #f0f0f0; /* Typing text color */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #ff9800; }
+}
+
+#typing-text {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Additional Styling for Questions and Options */
+#question-container {
+    margin: 20px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button for Restarting the Quiz */
+#restart-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid #ff9800;
+    border-radius: 12px;
+    background-color: #333;
+    color: #ff9800;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#restart-button:hover {
+    background-color: #ff9800;
+    color: #333;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}

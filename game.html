@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Patna Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Rules Page -->
+        <div id="rules-page" class="box">
+            <h1>Welcome to the IIT Patna Quiz Game!</h1>
+            <div id="typing-container">
+                <p id="typing-text">Test your knowledge about IIT Patna!</p>
+            </div>
+            <div class="rules">
+                <h2>Rules</h2>
+                <ul>
+                    <li>You have 10 seconds to answer each question.</li>
+                    <li>Select the correct answer from the given options.</li>
+                    <li>Points are awarded for correct answers only.</li>
+                    <li>No points are given for unanswered questions.</li>
+                    <li>Good luck!</li>
+                </ul>
+            </div>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+        
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="box" style="display:none;">
+            <p id="timer">Time left: 10s</p>
+            <p id="score">Score: 0</p>
+            <div id="question-container"></div>
+            <button id="next-button" onclick="nextQuestion()">Next</button>
+            <button id="submit-button" onclick="submitQuiz()" style="display:none;">Submit</button>
+        </div>
+        
+        <!-- Result Page -->
+        <div id="result-page" class="box" style="display:none;">
+            <p id="result"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
